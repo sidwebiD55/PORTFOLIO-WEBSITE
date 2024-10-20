@@ -1,0 +1,135 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    padding: 50px;
+}
+
+/* Main heading */
+h1 {
+    font-size: 50px;
+    color: #ff4081;
+    margin-bottom: 10px;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff4081;
+    margin-bottom: 40px;
+    animation: fadeInDown 2s ease-in-out 1s;
+}
+
+/* Styling for images */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-in-out 1.5s;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.her-image, .cake-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on images */
+.her-image:hover, .cake-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.image-box p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ff4081;
+}
+
+/* Typing effect for the message */
+.message {
+    font-size: 22px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff3f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.6;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #ff4081;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Animations */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ff4081; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    .her-image, .cake-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+}

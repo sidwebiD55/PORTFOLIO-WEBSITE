@@ -1,0 +1,114 @@
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #7692f8 0%, #acb6e5 100%);
+    color: #aa7070;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #2980b9;
+}
+
+h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #2980b9;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    color: #e74c3c;
+    margin-left: 20px;
+    font-size: 1.5em;
+    position: relative;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    font-size: 1.5em;
+    top: -5px;
+}
+
+/* Style for movie description boxes */
+pre {
+    background-color: #ffffff;
+    border-left: 5px solid #3498db;
+    margin: 10px 20px;
+    padding: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+pre:hover {
+    transform: scale(1.05);
+}
+
+pre::before {
+    content: ' ';
+}
+
+/* Add spacing between movie sections */
+h3, pre {
+    margin-bottom: 30px;
+}
+
+/* Style for body padding */
+body {
+    padding: 20px;
+}
+
+/* Container for movies */
+.movie-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Additional hover effects for pre sections */
+pre:hover {
+    background-color: #f0f8ff;
+    border-left-color: #e74c3c;
+    transition: background-color 0.3s, border-left-color 0.3s;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
